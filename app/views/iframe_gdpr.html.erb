@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="msapplication-config" content="none">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <%= stylesheet_link_tag("iframe_gdpr/application") %>
+    <title><%= @service.title %></title>
+  </head>
+  <body>
+    <div class="message">
+      <%= t("#{@service.id}.message", default: :default_message, scope: "iframe_gdpr", service_title: @service.title) %>
+    </div>
+    <div class="links">
+      <div class="activate-frame-link">
+        <%= link_to t("activate-frame-link", scope: "iframe_gdpr"), "#", id: "activate-frame" %>
+      </div>
+      <div class="activate-service-link">
+        <%= link_to t("activate-service-link", scope: "iframe_gdpr"), "#", id: "activate-service" %>
+      </div>
+    </div>
+    <%= javascript_include_tag("iframe_gdpr/application") %>
+  </body>
+</html>

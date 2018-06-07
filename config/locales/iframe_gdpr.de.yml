@@ -1,0 +1,16 @@
+de:
+  iframe_gdpr:
+    default_message: >
+      Aus datenschutzrechtlichen Gründen benötigen wir Ihre explizite
+      Zustimmung um Inhalte vom externen Dienst %{service_title} hier
+      anzeigen zu können.
+
+    # You can override the default message for each service
+    # spotify:
+    #   message: SPOTIFY MESSAGE HERE
+
+    activate-frame-link: >
+      Einmalig anzeigen
+    activate-service-link: >
+      Immer anzeigen
+

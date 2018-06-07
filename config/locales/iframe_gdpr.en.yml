@@ -1,0 +1,16 @@
+en:
+  iframe_gdpr:
+    default_message: >
+      Due to EU data protection laws we need your consent to
+      show you the content from the external service
+      %{service_title}.
+
+    # You can override the default message for each service
+    # spotify:
+    #   message: SPOTIFY MESSAGE HERE
+
+    activate-frame-link: >
+      Show once
+    activate-service-link: >
+      Show always
+
